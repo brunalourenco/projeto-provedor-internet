@@ -1,0 +1,262 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+.realce-azul {
+  color: #2f86d6;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+/* CABECALHO */
+.cabecalho {
+  background-color: #fff;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 80px;
+}
+.titulo {
+  font-weight: bold;
+  font-size: 18px;
+}
+.container-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.texto-logo-alfatech {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: left;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.container-logo {
+  display: flex;
+  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+.menu li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.menu a:link,
+.menu a:visited {
+  color: #233032;
+  font-weight: 700;
+}
+
+.menu a:hover,
+.menu a:active {
+  color: #2f86d6;
+  font-weight: 700;
+}
+
+/* BANNER */
+.banner {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f86d6;
+  gap: 10px;
+}
+
+.texto-banner {
+  color: #f1f3f7;
+  padding: 20px 35px;
+}
+
+.texto-banner h2 {
+  font-size: 28px;
+}
+/* PRIMEIRO ANUNCIO */
+
+/*------ AMBAS AS SESSOES DE ANUNCIO -----------------*/
+.anuncio {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 120px;
+  line-height: 30px;
+}
+
+.link-anuncio {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+/*-----------------------------------------------------*/
+
+.primeiro-anuncio {
+  background-color: #233032;
+  color: #fff;
+}
+
+.link-precos-1 {
+  background-color: #2f86d6;
+  font-weight: 700;
+}
+
+.link-precos-1 a:link,
+.link-precos-1 a:visited {
+  color: #fff;
+}
+
+.link-precos-1 a:hover,
+.link-precos-1 a:active {
+  color: #233032;
+}
+
+/* INFORMACOES*/
+.informacoes {
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+
+.titulo-informacoes {
+  text-align: center;
+  padding: 40px 0;
+  line-height: 30px;
+}
+
+.container-informacoes {
+  display: flex;
+  flex-flow: row;
+  padding: 0 20px;
+}
+
+.box-informacoes img {
+  width: 100px;
+  height: 100px;
+}
+
+.box-informacoes {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+/* PLANOS */
+.planos {
+  background-color: #f1f3f7;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.container-tabela {
+  box-shadow: 0 0 30px 5px rgba(47, 134, 214, 1);
+  border-radius: 5px;
+}
+
+.tabela-precos {
+  border-collapse: collapse;
+  width: 900px;
+  padding: 20px 10px;
+}
+
+.tabela-precos th {
+  padding: 5px;
+}
+
+.tabela-precos td {
+  padding: 20px;
+  border: solid 0.5px #c6c6c6;
+}
+
+/*.tabela-precos td {
+  border: solid 1px #a89f9f;
+}*/
+
+.tabela-precos .icone-tabela {
+  width: 90px;
+  height: 90px;
+}
+
+.realce-tabela {
+  font-size: smaller;
+  color: #a89f9f;
+}
+
+.tabela-precos {
+  text-align: center;
+}
+
+/* SEGUNDO ANUNCIO */
+.segundo-anuncio {
+  background-color: #2f86d6;
+  color: #fff;
+}
+
+.link-precos-2 {
+  background-color: #233032;
+  font-weight: 700;
+}
+
+.link-precos-2 a:link,
+.link-precos-2 a:visited {
+  color: #fff;
+}
+
+.link-precos-2 a:hover,
+.link-precos-2 a:active {
+  color: #2f86d6;
+}
+
+/* CONTATO */
+.container-contato {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* RODAPE */
+
+.rodape {
+  background-color: #f1f3f7;
+  padding: 5px 0;
+}
+
+.rodape p,
+.realce-rodape {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+}
