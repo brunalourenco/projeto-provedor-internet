@@ -7,18 +7,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth; /* Rolagem suave */
-}
-
-section {
-  scroll-margin-top: 80px; /* Margem para compensar o header */
-}
-
-.limitar-secao {
+header,
+section,
+footer {
+  max-width: 1024px;
   width: 100%;
-  max-width: 1440x;
   margin: 0 auto;
+  padding-right: 200px;
+  padding-left: 200px;
 }
 
 a {
@@ -32,13 +28,15 @@ a {
 
 /* CABECALHO */
 .cabecalho {
-  height: 80px;
-  width: 1024px;
+  background-color: #fff;
   display: flex;
+  flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 80px;
 }
 .titulo {
   font-weight: bold;
@@ -52,14 +50,15 @@ a {
 .texto-logo-alfatech {
   display: flex;
   flex-flow: column;
-  text-align: left;
   justify-content: center;
+  text-align: left;
+  line-height: 20px;
   padding-left: 10px;
 }
 
 .container-logo {
   display: flex;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .menu {
@@ -85,50 +84,32 @@ a {
 
 /* BANNER */
 .banner {
-  background-color: #2f86d6;
-}
-
-.banner,
-.conteiner-banner {
   display: flex;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
-}
-
-.conteiner-banner {
-  width: 1024px;
-  display: flex;
+  background-color: #2f86d6;
   gap: 10px;
 }
 
-.box-texto-banner {
+.texto-banner {
   color: #f1f3f7;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  padding: 20px 35px;
 }
 
-.box-texto-banner h2 {
+.texto-banner h2 {
   font-size: 28px;
 }
-
-.box-imagem-banner {
-  width: 50%;
-  padding-right: 40px;
-}
-
 /* PRIMEIRO ANUNCIO */
 
 /*------ AMBAS AS SESSOES DE ANUNCIO -----------------*/
 .anuncio {
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  gap: 100px;
-  padding: 40px 0;
+  padding: 20px 120px;
   line-height: 30px;
-  width: 100%;
 }
 
 .link-anuncio {
@@ -161,7 +142,6 @@ a {
 .informacoes {
   background-color: #fff;
   padding-bottom: 40px;
-  width: 1024px;
 }
 
 .titulo-informacoes {
@@ -207,7 +187,7 @@ a {
 
 .tabela-precos {
   border-collapse: collapse;
-  width: 1024px;
+  width: 900px;
   padding: 20px 10px;
 }
 
@@ -260,10 +240,6 @@ a {
 }
 
 /* CONTATO */
-.contato {
-  margin: 30px 0;
-}
-
 .container-contato {
   display: flex;
   flex-flow: column;
@@ -276,7 +252,7 @@ a {
 
 .rodape {
   background-color: #f1f3f7;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .rodape p,

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="nofollow, noindex">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    <title>AlfaTech - Soluções em Hospedagem</title>
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,30 +15,34 @@
   </head>
   <body>
     <!-- Cabecalho -->
-    <header class="cabecalho">
-      <div class="container-logo">        
-        <img src="./assets/logo-icone.png" alt="Logomarca da AlfaTech" />
-   
-      <div class="texto-logo-alfatech">
-        <p class="titulo">AlfaTech</p>
-        <p class="realce-azul">Soluções em hospedagem</p>
-    </div>
+   <header class="cabecalho limitar-secao" >
+      
+        <div class="container-logo">
+          <div class="container-image-logo">
+            <img src="./assets/logo-icone.png" alt="Logomarca da AlfaTech" /></div> 
+          
+        <div class="texto-logo-alfatech">
+          <p class="titulo">AlfaTech</p>
+          <p class="realce-azul">Soluções em hospedagem</p>
+        </div>
       </div>
-            
-      <nav>
+
+    <nav>
         <ul class="menu">
           <li><a href="#informacoes">Informações</a></li>
           <li><a href="#planos">Planos</a></li>
-          <li><a href="../html/preco.html">Preços</a></li>
+          <li><a href="preco.html">Preços</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav> 
+   </header> 
+    
 
     <!-- Conteudo Principal -->
     <main>
-      <section class="banner">
-        <div class="texto-banner">
+      <section class="banner limitar-secao">
+        <div class="conteiner-banner">
+          <div class="box-texto-banner">
           <p>Simples - Fácil de usar - 10x mais rápido</p>
           <h2>O melhor serviço de hospedagem na web para o seu site.</h2>
           <p>
@@ -46,15 +50,17 @@
             por causa de lentidão na sua hospedagem.
           </p>
         </div>
-        <div class="imagem-banner">
+        <div class="box-imagem-banner">
           <img
             src="./assets/imagem-banner.png"
             alt="Figura de hospedagem de sites"
           />
         </div>
+        </div>
+        
       </section>
 
-      <section class="primeiro-anuncio anuncio">
+      <section class="primeiro-anuncio anuncio limitar-secao">
         <div class="texto-anuncio">
           <h2>Hospede o seu site por apenas R$29 por mês.</h2>
           <p>Também temos planos gratuitos. Adquira já o seu.</p>
@@ -64,7 +70,7 @@
         </div>
       </section>
 
-      <section class="informacoes" id="informacoes">
+      <section class="informacoes limitar-secao" id="informacoes">
         <div class="titulo-informacoes">
           <h2> Existem diversos serviços de hospedagem de sites.</p> 
            <p>Porque você deve <span class="realce-azul">nos escolher?</span>
@@ -91,34 +97,28 @@
         </div>
       </section>
 
-      <section class="planos" id="planos">
+      <section class="planos limitar-secao" id="planos">
         <h2> Pague <span class="realce-azul">somente </span> pelo que for usar. Sem cobranças adicionais!</h2>
        <div class="container-tabela">
          <table class="tabela-precos">
           <thead>
-            <tr>
+            <tr class="titulo-tabela">
               <th>Pessoal</th>
               <th>Profissional</th>
               <th>Empresarial</th>
               <th>Big Techs</th>
             </tr>
 
-            <tr class="realce-tabela">     
-              <th><p>Indicado para uso pessoal</p></th>          
-              <th><p>Indicado para profissionais de T.I</p></th>           
-              <th><p>Indicado para empresas</p></th>            
-              <th><p>Indicado para Big Techs</p></th>    
-            </tr>             
-                    
-            <tr>
-               <th><img class="icone-tabela" src="./assets/pessoal-icone.png" alt="Icone com 1 pessoa"></th>
-               <th><img class="icone-tabela" src="./assets/equipe-icone.png" alt="Icone de equipe"></th>
-               <th><img class="icone-tabela" src="./assets/empresa-icone.png" alt="Icone de empresa"></th>
-               <th><img class="icone-tabela" src="./assets/big-tech.png" alt="Icone de Big-tech"></th> 
-            </tr>
           </thead>
-          <tbody>
+          <tbody>   
             
+            <tr class="realce-tabela">     
+              <td><div><p>Indicado para uso pessoal</p><img class="icone-tabela" src="./assets/pessoal-icone.png" alt="Icone com 1 pessoa"></div></td>          
+              <td><p>Indicado para profissionais de T.I</p><img class="icone-tabela" src="./assets/equipe-icone.png" alt="Icone de equipe"></td>           
+              <td><p>Indicado para empresas</p><img class="icone-tabela" src="./assets/empresa-icone.png" alt="Icone de empresa"></td>            
+              <td><p>Indicado para Big Techs</p><img class="icone-tabela" src="./assets/big-tech.png" alt="Icone de Big-tech"></td>    
+            </tr>             
+               
 
             <tr>                       
                 <td> 1 usuário </td>
@@ -161,21 +161,24 @@
 
       </section>
 
-      <section class="segundo-anuncio anuncio">
+      <section class="segundo-anuncio anuncio limitar-secao">
          <div class="texto-anuncio">
-          <h2>Mais de 20.000 pessoas confiam na Spark!<h2>
-          <h2> Seja um deles você também!</h2>
-        </div>
-        <div class="link-precos-2 link-anuncio">
-          <a href="preco.html"> TABELA DE PREÇOS</a>
-        </div>
-        <h2> 
+            <div>
+              <h2>Mais de 20.000 pessoas confiam na Spark!</h2>
+              <h2> Seja um deles você também!</h2></div>          
+            </div>
+            <div class="link-precos-2 link-anuncio">
+               <a href="preco.html"> TABELA DE PREÇOS</a>
+            </div>
+         </div>
+        
 
-      </section>
+      </section> 
+      
 
-      <section class="contato" id="contato">
+      <section class="contato limitar-secao" id="contato">
          <div class="container-contato">
-         <div class="container-logo">        
+         <div class="container-logo img">        
            <img src="./assets/logo-icone.png" alt="Logomarca da AlfaTech" />
    
           <div class="texto-logo-alfatech">
@@ -194,10 +197,11 @@
       </div>
 
       </section>
+      
     </main>
 
     <!-- Rodape -->
-    <footer class="rodape" id="rodape">      
+    <footer class="rodape limitar-secao" id="rodape">      
      
          <p>Desenvolvido por <span class="realce-azul realce-rodape">Bruna Lourenço Duarte</span></p>
       

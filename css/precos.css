@@ -1,4 +1,4 @@
-/* PALETA DE CORES */
+/* PALETA DE CORES 
 
 #fff
 #f1f3f7
@@ -6,4 +6,139 @@
 #a8a4a4
 #233032
 #2f86d6
-rgba(47, 134, 214, 1)
+rgba(47, 134, 214, 1)*/
+
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+section {
+  scroll-margin-top: 80px; /* Margem para compensar o header */
+}
+
+.limitar-secao {
+  width: 100%;
+  max-width: 1440x;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.realce-azul {
+  color: #2f86d6;
+  font-weight: bold;
+}
+
+.realce-branco {
+  color: #fff;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+section {
+  scroll-margin-top: 80px; /* Margem para compensar o header */
+}
+
+/* CABECALHO */
+.cabecalho {
+  background-color: #2f86d6;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 18px;
+}
+.container-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.texto-logo-alfatech {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: left;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.container-logo {
+  display: flex;
+  padding: 15px 0;
+  border: solid 1px red;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+.menu li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.menu a:link,
+.menu a:visited {
+  color: #233032;
+  font-weight: 700;
+}
+
+.menu a:hover,
+.menu a:active {
+  color: #fff;
+  font-weight: 700;
+}
+/* TABELA PREÇOS */
+
+.planos {
+  margin-top: 100px;
+}
+
+/* CONTATO */
+.contato {
+  background-color: #2f86d6;
+  color: #fff;
+}
+
+.container-contato {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* RODAPE */
+
+.rodape {
+  background-color: #f1f3f7;
+  padding: 15px 0;
+}
+
+.rodape p,
+.realce-rodape {
+  font-size: 16px;
+  text-align: center;
+}
