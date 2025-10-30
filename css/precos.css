@@ -22,7 +22,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 80px; /* Margem para compensar o header */
+  scroll-margin-top: 90px; /* Margem para compensar o header */
 }
 
 .limitar-secao {
@@ -53,20 +53,29 @@ section {
   scroll-margin-top: 80px; /* Margem para compensar o header */
 }
 
+.cabecalho,
+.contato {
+  background-color: #2f86d6;
+}
+
 /* CABECALHO */
 .cabecalho {
-  background-color: #2f86d6;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
   margin-bottom: 10px;
+  padding-top: 5px 0;
 }
 
 .titulo {
   font-weight: bold;
   font-size: 18px;
+}
+
+.titulo,
+.subtitulo {
+  color: #fff;
 }
 .container-logo img {
   width: 60px;
@@ -85,7 +94,6 @@ section {
 .container-logo {
   display: flex;
   padding: 15px 0;
-  border: solid 1px red;
 }
 
 .menu {
@@ -100,25 +108,57 @@ section {
 
 .menu a:link,
 .menu a:visited {
-  color: #233032;
+  color: #fff;
   font-weight: 700;
 }
 
 .menu a:hover,
 .menu a:active {
-  color: #fff;
+  color: #233032;
   font-weight: 700;
 }
 /* TABELA PREÇOS */
 
 .planos {
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabela-planos tbody td {
+  text-align: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #f1f3f7;
+  border-right: 1px solid #f1f3f7;
+  font-size: 14px;
+}
+
+.titulo-tabela {
+  font-size: 11px;
+  color: #617c80;
+}
+
+.tabela-planos .preco {
+  font-size: 25px;
+}
+.tabela-planos th,
+.destaque-fundo-cinza {
+  background-color: #f6f6f6;
+}
+
+.texto-negrito {
+  font-weight: 550;
+}
+
+.celula-invisivel {
+  visibility: hidden;
 }
 
 /* CONTATO */
 .contato {
-  background-color: #2f86d6;
   color: #fff;
+  padding-bottom: 15px;
 }
 
 .container-contato {
